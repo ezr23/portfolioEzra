@@ -11,8 +11,8 @@ const services = [
     link: 'Learn more',
   },
   {
-    name: 'Developer',
-    description: 'I am a motivated developer with a customer-focused approach and committed to exceeding their expectations in every project. Able to tackle complex problems and deliver exceptional results.',
+    name: 'Blackwork tattoo',
+    description: 'My main focus is to use blackwork tattoo techniques to create intricate and detailed designs.',
     link: 'Learn more',
   },
 ];
@@ -35,9 +35,11 @@ const Services = () => {
           <h3 className='h3 max-w-[300px] mb-20'>
           I'm a developer and tattoo artist who is passionate about continuous learning.
           </h3>
-          <button className='btn btn-sm'>
-            See my work
-          </button>
+          <a href="https://instagram.com/la_madriguera_tattoo?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
+      <button className='btn btn-sm'>
+        See my work
+      </button>
+    </a>
         </motion.div>
         {/* services */}
         <motion.div 
@@ -58,10 +60,10 @@ const Services = () => {
                   <p className='font-secundary leading-tight'>{description}</p>
                   </div>
                   <div className='flex flex-col flex-1 items-end'>
-                  <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                  <a href='https://instagram.com/la_madriguera_tattoo?igshid=OGQ5ZDc2ODk2ZA==' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                     <BsFillArrowUpRightCircleFill/>
                   </a>
-                  <a href='#' className='text-gradient text-sm'>
+                  <a href='https://instagram.com/la_madriguera_tattoo?igshid=OGQ5ZDc2ODk2ZA==' className='text-gradient text-sm'>
                     {link}
                   </a>
                   </div>

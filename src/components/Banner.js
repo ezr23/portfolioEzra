@@ -5,6 +5,9 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
+import { Link } from 'react-scroll';
+
+
 const Banner = () => {
   return (
 
@@ -44,21 +47,28 @@ const Banner = () => {
               variants={fadeIn('up', 0.4)} initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'> My Portfolio</a>
+
+              <Link to='contact' className='btn btn-lg flex justify-center items-center'
+                activeClass='active'
+                smooth={true}
+                spy={true}>
+                Contact me
+              </Link>
+
+              <a href='https://github.com/ezr23' className='text-gradient btn-link'> My Portfolio</a>
             </motion.div>
             {/*socials*/}
             <motion.div
               variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
+              <a href='https://github.com/ezr23'>
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href='https://instagram.com/la_madriguera_tattoo?igshid=OGQ5ZDc2ODk2ZA=='>
                 <FaInstagram />
               </a>
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/ezra-ram%C3%ADrez-122341273/'>
                 <FaLinkedin />
               </a>
             </motion.div>
@@ -67,7 +77,7 @@ const Banner = () => {
           {/*image*/}
           <motion.div
             variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'}
-            
+
             className='hidden lg:flex flex-1 max-w-[320px] max-w-[482px]'>
             <img src={Image} alt='' />
           </motion.div>
